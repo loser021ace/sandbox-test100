@@ -8,3 +8,13 @@ document.getElementById("app").innerHTML = `
   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
+
+// アロー関数
+
+function func1(str) {
+  return str;
+}
+
+console.log(func1("aaa"));
+
+const func2 = func1("1");
