@@ -9,12 +9,27 @@ document.getElementById("app").innerHTML = `
 </div>
 `;
 
-// アロー関数
+// スプレッド構文
+const arr1 = [1, 2, 3];
+console.log(arr1);
+console.log(...arr1);
 
-function func1(str) {
-  return str;
-}
+// mapやfillterえお使った配列の処理
+const nameArr = ["タナカ", "yamada", "jan"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr);
+// }
 
-console.log(func1("aaa"));
+const num = 1300;
+console.log(num.toLocaleString());
 
-const func2 = func1("1");
+const formattedNum =
+  typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+
+console.log(formattedNum);
+
+const cheackSum = (num1, num2) => {
+  return num1 + num2 >= 100 ? num1 + num2 : "っ雑魚だね";
+};
+
+console.log(cheackSum(12, 0));
